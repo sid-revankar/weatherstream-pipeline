@@ -17,7 +17,7 @@ An end-to-end real-time data pipeline for fetching, transforming, and visualizin
 
 **Programming:** Python (Requests, Pandas, NumPy, psycopg2). 
 
-**Data Streaming:** Apache Kafka or RabbitMQ, optional for simplicity. 
+**Data Streaming:** Apache Kafka. 
 
 **Database:** PostgreSQL. 
 
