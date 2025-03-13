@@ -1,30 +1,27 @@
-def tri_pattern(size):
-    for each in range(size):
-        if each < size:
-            print('*' * (each + 1), each,end='\n' if each < size - 1 else '')
+import subprocess
+import time
 
-def revers_numb(num)-> int:
-    rev = 0
-    while num > 0:
-        rev = rev * 10 + num % 10
-        num //= 10
-    return rev
+if __name__ == "__main__": 
+    # Function to run a script.
+    def run_script(script_name, background=False):
+        if background:
+            return subprocess.Popen(["python", script_name])  # Run in the background
+        else:
+            subprocess.run(["python", script_name])  # Run in the foreground
 
-def prime(number)->bool:
-    if number <=1:
-        return False
-    for i in range(2, int(number**0.5)+1):
-        if number % i == 0:
-            return False
-    return True
+    print("🛠️ Creating Kafka topics...")
+    run_script("topics.py")
 
-def sum_of_num():
-    sum_num = list(map(sum(int(digit)for digit in str(num))))
-    return sum_num
+    print("🚨 Starting Weather Alert Consumer...")
+    alert_consumer_process = run_script("consumer_alert.py", background=True)
 
-def main():
-    # print(prime(int(input("Enter a number to check its prime or not: "))))
-    print(sum_of_num())
+    print("🚀 Running Producer for the first time...")
 
-if __name__=='__main__':
-    main()
+    try:
+        while True:
+            run_script("producer.py")
+            print("⏳ Waiting for 5 minutes before next data fetch...")
+            time.sleep(300)
+    except KeyboardInterrupt:
+        print("\n⚠️ Stopping all processes...")
+        alert_consumer_process.terminate()
