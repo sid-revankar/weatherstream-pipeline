@@ -24,6 +24,12 @@ An end-to-end real-time data pipeline for fetching, transforming, and visualizin
 
 **Visualization:** Power BI. 
 
+##  Output
+![signal-2025-03-24-002645_002](https://github.com/user-attachments/assets/d5c2d336-367a-4ca2-902f-f9ea8612f9c9)
+![signal-2025-03-24-002645_003](https://github.com/user-attachments/assets/e72efa5e-a75d-482e-ab86-a0156845a5de)
+![Screenshot 2025-03-23 212635](https://github.com/user-attachments/assets/40c7c141-2017-497f-a700-6e3f5af5b041)
+![video 1](https://github.com/user-attachments/assets/5c22ed8d-9ebb-40e1-9c98-64bff6fc1ddd)
+![video 2](https://github.com/user-attachments/assets/609d496b-f990-4e6d-99c2-8b25cdb58b03)
 
 ##  Dashboard
 ![image](https://github.com/user-attachments/assets/d990ae62-edf2-4a83-8c2f-1ef89a998af0)
