@@ -26,9 +26,10 @@ An end-to-end real-time data pipeline for fetching, transforming, and visualizin
 
 
 ##  Dashboard
-![image](https://github.com/user-attachments/assets/58ff783e-b096-40d3-8999-fddb1e88b25f)
+![image](https://github.com/user-attachments/assets/d990ae62-edf2-4a83-8c2f-1ef89a998af0)
+![video](https://github.com/user-attachments/assets/9f8a7c63-d226-4904-9f26-b121361427f9)
 
-https://github.com/user-attachments/assets/785b0452-922b-428b-a483-df40fb4c14f1
+
 
 
 
